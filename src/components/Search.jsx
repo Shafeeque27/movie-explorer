@@ -1,10 +1,11 @@
 import React from 'react';
+import searchIcon from '/search.svg';
 
 const Search = ({ searchTerm, setSearchTerm }) => {
     return (
         <div className="search">
             <div>
-                <img className="w-5 h-5" src={`${import.meta.env.BASE_URL}search.svg`} alt="search" />
+                <img className="w-5 h-5" src={searchIcon} alt="search" />
 
                 <input
                     type="text"

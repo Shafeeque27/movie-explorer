@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import starIcon from '/star.svg';
 
 const MovieCard = ({
     movie: {
@@ -29,10 +30,7 @@ const MovieCard = ({
 
                 <div className="content">
                     <div className="rating">
-                        <img
-                            src={`${import.meta.env.BASE_URL}star.svg`}
-                            alt="star icon"
-                        />
+                        <img src={starIcon} alt="star icon" />
                         <p>{vote_average ? vote_average.toFixed(1) : 'N/A'}</p>
 
                         <span>•</span>
